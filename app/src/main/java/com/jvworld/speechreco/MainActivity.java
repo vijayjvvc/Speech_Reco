@@ -120,24 +120,38 @@ public class MainActivity extends AppCompatActivity {
 
                 if (isAdd){
                     isAdd = false;
-                    if (sum == Integer.parseInt(resultStr)) {
-                        speak("correct");
-                    } else {
-                        speak("Incorrect");
+                    try {
+                        if (sum == Integer.parseInt(resultStr)) {
+                            speak("correct");
+                        } else {
+                            speak("Incorrect");
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
+
                 }if (isMultiply){
                     isMultiply = false;
-                    if (multiply == Integer.parseInt(resultStr)) {
-                        speak("correct");
-                    } else {
-                        speak("Incorrect");
+                    try {
+                        if (multiply == Integer.parseInt(resultStr)) {
+                            speak("correct");
+                        } else {
+                            speak("Incorrect");
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
+
                 }if (isMinus){
                     isMinus = false;
-                    if (minus == Integer.parseInt(resultStr)) {
-                        speak("correct");
-                    } else {
-                        speak("Incorrect");
+                    try {
+                        if (minus == Integer.parseInt(resultStr)) {
+                            speak("correct");
+                        } else {
+                            speak("Incorrect");
+                        }
+                    }catch (Exception e){
+                        e.printStackTrace();
                     }
                 }
                 switch (resultStr) {
